@@ -1,6 +1,7 @@
 // 顶部导航
 .search-box {
   display: flex;
+  align-items: center;
   position: absolute;
   top: 25px;
   width: 100%;
@@ -18,6 +19,8 @@
 
     // 位置
     .location {
+      display: flex;
+      align-items: center;
       .icon-arrow {
         margin-left: 2px;
         font-size: 12px;
