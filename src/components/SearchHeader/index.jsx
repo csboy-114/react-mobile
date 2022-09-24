@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 // 导入样式
 import './index.scss'
 
-function SearchHeader({ history, cityName, className }) {
+function SearchHeader({ cityName, className }) {
   const navigate=useNavigate()
   return (
     <div className={['search-box', className || ''].join(' ')}>
