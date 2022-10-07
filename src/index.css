@@ -6,6 +6,9 @@ html,body,#root,.App{
   background-color: #fff;
   margin: 0;
 }
+body {
+  padding: 0;
+}
 div,ul,li,h1,h2,h3,h4,h5,h6,p{
   box-sizing: border-box;
   margin: 0;

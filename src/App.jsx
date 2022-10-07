@@ -5,6 +5,7 @@ import News from './pages/News'
 import Index from './pages/Index'
 import HouseList from "./pages/HouseList";
 import Profile from "./pages/Profile";
+import Map from "./pages/Map"
 export default function App() {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ export default function App() {
             <Route path="" element={<Navigate to="index"/>} />     
           </Route>
           <Route path="/citylist" element={<CityList />}></Route>
+          <Route path="/map" element={<Map />}></Route>
           <Route path="/" element={<Navigate to="/home"/>} />
         </Routes>
       </div>
