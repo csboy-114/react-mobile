@@ -28,7 +28,7 @@ const getCurrentCity=()=>{
     }); 
     })
   }
-  return Promise.resolve(localCity)
+  return Promise.resolve(JSON.parse(localCity))
 }
 
 export {

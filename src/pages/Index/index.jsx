@@ -15,7 +15,7 @@ const Index = () => {
   useEffect(()=>{
     async function fn(){
       const res = await getCurrentCity()
-      setCityName(JSON.parse(res).label)
+      setCityName(res.label)
     }
     fn()
   },[])
