@@ -1,8 +1,9 @@
-import { NavBar,Toast } from 'antd-mobile'
+import { Toast } from 'antd-mobile'
 import { useNavigate } from 'react-router-dom'
 import { useEffect ,useState ,useRef } from 'react'
 import { getCurrentCity } from '../../utils'
 import { List ,AutoSizer } from 'react-virtualized';
+import NavHeader from '../../components/NavHeader'
 import './index.scss'
 
 // 索引高度
@@ -129,7 +130,11 @@ const CityList= ()=>{
   },[])
   return (
     <div className="citylist">
-      <NavBar backArrow={<i className="iconfont icon-back"></i>} className="navbar" onBack={back}>城市选择</NavBar>
+      <NavHeader
+      className='citylist-nav'
+      >
+        城市选择
+      </NavHeader>
       {/* 城市列表 */}
       <AutoSizer>
         {
